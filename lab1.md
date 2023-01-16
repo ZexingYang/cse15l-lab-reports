@@ -11,9 +11,9 @@ I have already downloaded visual studio before.
 
 
 
-Me logging into remote computer with my username. I tried some commands like pwd: print working directory and ls: list files and directories
+I was using my username to access a distant computer. The first few lines show the results of my local computer search. I then used SSH (Secure Shell) to log into cse15l account and tried some commands like pwd:print working directory and ls: file and directory listing
 
-
+![Image](login.png)
 
 
 
@@ -24,3 +24,5 @@ Me logging into remote computer with my username. I tried some commands like pwd
 Ls -lat: list directories with three options: l :showing file information    a: all   t: sort by time
 Mkdir : make a directory called foo
 Then I use touch foo.txt to create a new text file under foo directory and use vim to open and edit foo.txt 
+
+cp is copy and cat prints the content of the txt file
