@@ -23,6 +23,12 @@ I was using my username to access a distant computer. The first few lines show 
 
 Ls -lat: list directories with three options: l :showing file information    a: all   t: sort by time
 Mkdir : make a directory called foo
-Then I use touch foo.txt to create a new text file under foo directory and use vim to open and edit foo.txt 
+![Image](command1.png)
 
+
+Then I use touch foo.txt to create a new text file under foo directory and use vim to open and edit foo.txt 
+![Image](command2.png)
 cp is copy and cat prints the content of the txt file
+![Image](command3.png)
+
+Thank you for reviewing this lab report!
