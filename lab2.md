@@ -15,9 +15,9 @@ A Test induce failure
 {
 @Test 
 public void testReverseInPlace() {
-	int[] input1 = { 3 };
+	int[] input1 = { 1, 2, 3 };
 	ArrayExamples.reverseInPlace(input1);
-	assertArrayEquals(new int[]{ 3 }, input1);
+	assertArrayEquals(new int[]{ 3, 2, 1 }, input1);
 }
 
 ```
@@ -39,16 +39,33 @@ public void testReverseInPlace() {
 		
 
 
-The symptom seems to be that the last index, here length 3 array at index two gives the wrong output.
+The symptom seems to be that the last index, here length 3 array at index 2 gives the wrong output given what the junit claims. The symptom is that later elemets repeat earlier elemnts and the swap fails.
 
 
 
 
-When we look up the code, it just swap first and last elements without temperary variable, leading some elements not changed at all. The bug is that we should /* for(int i = 0; i < (arr.length)/2; i += 1) {  //abcd to dcba
+
+
+When we look up the code, it just swap first and last elements without temperary variable, leading some elements not changed at all. The bug is that we should 
+```
+
+public class ArrayExamples {
+
+  // Changes the input array to be in reversed order
+  static void reverseInPlace(int[] arr) {
+    for(int i = 0; i < (arr.length)/2; i += 1) {  //abcd to dcba
       int temp = arr[i];
       arr[i] = arr[arr.length - i - 1];
       arr[arr.length-i-1] = temp;
-    } */  
+    }  
+    //Correct above
+    //Incorrect below
+    /* for(int i = 0; i < arr.length; i += 1) {
+      arr[i] = arr[arr.length - i - 1];
+    } */
+  }
+
+```
 
 ## Part 3 New Knowledge
 #Wed 11:00 AM B260, Group 2, Serpentmarsh
