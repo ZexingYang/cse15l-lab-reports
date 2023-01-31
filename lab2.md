@@ -6,7 +6,7 @@
 Both url.getPath() and url.getQuery() are called. Here, I use substring method and indexOf to extract the portion of query as the string I wish to return.
 
 
-The string is "hello" here and runningstring is "Hello"
+The string is "Hello" here and runningstring is "Hello"
 ![Image](report2_hello.png)
 
 
