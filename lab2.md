@@ -18,12 +18,12 @@
 ## Part 3 New Knowledge
 #Wed 11:00 AM B260, Group 2, Serpentmarsh
 
-![Image](lab2_increment.png)
+![Image](report2_increment.png)
 I didn't know Building and Running the Server before and it amazes me when I could build a server that perform simple calculations show on the screen.
 
 
 
 
 
-![Image](lab2_increase3.png)
+![Image](report2_increase3.png)
 I also noticed the difference between localhost and ieng6-203: localhost is a hostname that refers to the current device used to access it while ieng-203 is my ucsd remote computer.
