@@ -13,7 +13,7 @@ The string is "Hello" here and runningstring is "Hello"
 The string is "How are you" here and the runningstring is "Hello" + '\n' + "How are you"
 ![Image](report2_how.png)
 
-
+I wrote the code and revise it by serching string methods and even asking chatGPT to debug my code because I thought the demo in class today interesting. My prompt is: why is my code not working as expected to keep track of strings and typing in my handleRequest.
 ```
 import java.io.IOException;
 import java.net.URI;
