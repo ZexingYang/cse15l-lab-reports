@@ -3,17 +3,22 @@
 ## Part 1 Search Engine
 #Wed 11:00 AM B260, Group 2, Serpentmarsh
 
-
+Both url.getPath() and url.getQuery() are called. Here, I use substring method and indexOf to extract the portion of query as the string I wish to return.
+The string is "hello" here and runningstring is "Hello"
 ![Image](report2_hello.png)
+
+The string is "How are you" here and the runningstring is "Hello" + '\n' + "How are you"
 ![Image](report2_how.png)
+
+
 ```
 import java.io.IOException;
 import java.net.URI;
 
  public class StringServer implements URLHandler{
-
+    //The final return value initialize with empty string
     private static String runningString = "";
-    //Same code from class NumberServer
+    //Same code from class NumberServer to initialize a server
     public static void main(String[] args) throws IOException {
         if(args.length == 0){
             System.out.println("Missing port number! Try any number between 1024 to 49151");
@@ -56,6 +61,11 @@ import java.net.URI;
     }
 }
 ```
+
+
+
+
+
 
 
 ## Part 2 One bug from Lab3
@@ -121,6 +131,11 @@ public class ArrayExamples {
 	}
 }
 ```
+
+
+
+
+
 
 ## Part 3 New Knowledge
 #Wed 11:00 AM B260, Group 2, Serpentmarsh
