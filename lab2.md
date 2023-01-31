@@ -4,8 +4,11 @@
 #Wed 11:00 AM B260, Group 2, Serpentmarsh
 
 Both url.getPath() and url.getQuery() are called. Here, I use substring method and indexOf to extract the portion of query as the string I wish to return.
+
+
 The string is "hello" here and runningstring is "Hello"
 ![Image](report2_hello.png)
+
 
 The string is "How are you" here and the runningstring is "Hello" + '\n' + "How are you"
 ![Image](report2_how.png)
