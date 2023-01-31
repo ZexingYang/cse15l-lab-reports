@@ -10,7 +10,22 @@
 ## Part 2 One bug from Lab3
 #Wed 11:00 AM B260, Group 2, Serpentmarsh
 
+A Test induce failure
+			@Test 
+			public void testReverseInPlace() {
+				int[] input1 = { 3 };
+				ArrayExamples.reverseInPlace(input1);
+				assertArrayEquals(new int[]{ 3 }, input1);
+			}
 
+  
+Doesn't induce failure
+			@Test 
+			public void testReverseInPlace() {
+				int[] input1 = { };
+				ArrayExamples.reverseInPlace(input1);
+				assertArrayEquals(new int[]{ }, input1);
+			}
 
 
 
