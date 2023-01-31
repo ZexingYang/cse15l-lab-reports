@@ -3,8 +3,58 @@
 ## Part 1 Search Engine
 #Wed 11:00 AM B260, Group 2, Serpentmarsh
 
+```
+import java.io.IOException;
+import java.net.URI;
 
+ public class StringServer implements URLHandler{
+![Image](report2_hello.png)
+![Image](report2_how.png)
 
+    private static String runningString = "";
+    //Same code from class NumberServer
+    public static void main(String[] args) throws IOException {
+        if(args.length == 0){
+            System.out.println("Missing port number! Try any number between 1024 to 49151");
+            return;
+        }
+
+        int port = Integer.parseInt(args[0]);
+
+        Server.start(port, new StringServer());
+    }
+    //It works! but could not keep track of strings
+    /* public String handleRequest(URI url) {
+        String returnstring = "";
+        System.out.println("Path: " + url.getPath());
+        if (url.getPath().contains("/add-message")) {
+            String string = (String)url.getQuery().substring(url.getQuery().indexOf('=')+1);
+            return returnstring + string + "\n";
+        }
+        else{
+            return "404 Not Found!";
+        }
+    }  */
+    
+    @Override
+    public String handleRequest(URI url) {
+        System.out.println("Path: " + url.getPath());
+        if (url.getPath().contains("/add-message")) {
+            String query = url.getQuery();
+            if (query != null) {
+                int index = query.indexOf("=");
+                if (index != -1) {
+                    String string = query.substring(index + 1);
+                    runningString += "\n" + string;
+                }
+            }
+            return runningString;
+        } else {
+            return "404 Not Found!";
+        }
+    }
+}
+```
 
 
 ## Part 2 One bug from Lab3
