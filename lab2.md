@@ -10,9 +10,17 @@
 ## Part 2 One bug from Lab3
 #Wed 11:00 AM B260, Group 2, Serpentmarsh
 
+Original code with bug:
+```
+static void reverseInPlace(int[] arr) {
+    for(int i = 0; i < arr.length; i += 1) {
+      arr[i] = arr[arr.length - i - 1];
+    }
+  }
+```
 A Test induce failure
 ```
-{
+
 @Test 
 public void testReverseInPlace() {
 	int[] input1 = { 1, 2, 3 };
@@ -26,7 +34,7 @@ public void testReverseInPlace() {
 
 Doesn't induce failure if we have only one element
 ```
-{
+
 @Test 
 public void testReverseInPlace() {
 	int[] input1 = {2};
@@ -50,21 +58,16 @@ When we look up the code, it just swap first and last elements without temperary
 ```
 
 public class ArrayExamples {
-
-  // Changes the input array to be in reversed order
-  static void reverseInPlace(int[] arr) {
-    for(int i = 0; i < (arr.length)/2; i += 1) {  //abcd to dcba
-      int temp = arr[i];
-      arr[i] = arr[arr.length - i - 1];
-      arr[arr.length-i-1] = temp;
-    }  
-    //Correct above
-    //Incorrect below
-    /* for(int i = 0; i < arr.length; i += 1) {
-      arr[i] = arr[arr.length - i - 1];
-    } */
-  }
-
+// Changes the input array to be in reversed order
+	static void reverseInPlace(int[] arr) {
+	//Correct above
+    		for(int i = 0; i < (arr.length)/2; i += 1) {  //abcd to dcba
+      			int temp = arr[i];
+      			arr[i] = arr[arr.length - i - 1];
+      			arr[arr.length-i-1] = temp;
+    		}		  
+	}
+}
 ```
 
 ## Part 3 New Knowledge
