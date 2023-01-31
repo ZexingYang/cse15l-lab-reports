@@ -10,14 +10,7 @@
 ## Part 2 One bug from Lab3
 #Wed 11:00 AM B260, Group 2, Serpentmarsh
 
-Original code with bug:
-```
-static void reverseInPlace(int[] arr) {
-    for(int i = 0; i < arr.length; i += 1) {
-      arr[i] = arr[arr.length - i - 1];
-    }
-  }
-```
+
 A Test induce failure
 ```
 
@@ -47,20 +40,28 @@ public void testReverseInPlace() {
 		
 
 
-The symptom seems to be that the last index, here length 3 array at index 2 gives the wrong output given what the junit claims. The symptom is that later elemets repeat earlier elemnts and the swap fails.
+The symptom seems to be that the last index, here length 3 array at index 2 gives the wrong output given what the junit claims. The symptom is that later elemets repeat earlier elemnts and the swap fails. 
+![Image](report2_bug1.png)
+However, with one element, the code still works!
 
-
-
-
+![Image](report2_bug2.png)
 
 
 When we look up the code, it just swap first and last elements without temperary variable, leading some elements not changed at all. The bug is that we should 
 ```
-
+Original code with bug:
+```
+static void reverseInPlace(int[] arr) {
+    for(int i = 0; i < arr.length; i += 1) {
+      arr[i] = arr[arr.length - i - 1];
+    }
+  }
+```
+Correct code using temp and modifying for loop
 public class ArrayExamples {
 // Changes the input array to be in reversed order
 	static void reverseInPlace(int[] arr) {
-	//Correct above
+	//Correct below
     		for(int i = 0; i < (arr.length)/2; i += 1) {  //abcd to dcba
       			int temp = arr[i];
       			arr[i] = arr[arr.length - i - 1];
