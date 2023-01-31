@@ -3,13 +3,14 @@
 ## Part 1 Search Engine
 #Wed 11:00 AM B260, Group 2, Serpentmarsh
 
+
+![Image](report2_hello.png)
+![Image](report2_how.png)
 ```
 import java.io.IOException;
 import java.net.URI;
 
  public class StringServer implements URLHandler{
-![Image](report2_hello.png)
-![Image](report2_how.png)
 
     private static String runningString = "";
     //Same code from class NumberServer
