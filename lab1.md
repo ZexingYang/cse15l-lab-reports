@@ -7,8 +7,8 @@ I have already downloaded visual studio before. Since I am using it all the time
 
 ![Image](vscode.png)
 
-
-
+If I haven't downloaded, just search vs code mac
+![Image](vsdownload.png)
 
 
 
