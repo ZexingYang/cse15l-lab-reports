@@ -56,14 +56,14 @@ I used ChatGPT and site https://www.geeksforgeeks.org/exec-command-in-linux-with
 In this illustration, the size of each file is obtained using the du command, and the size value is extracted using the cut command.
 The -h option of du instructs du to output file sizes in a more legible format, such as "1.5K" rather than "1536," 
 and stands for "human-readable".echo is a command in the shell that simply outputs its arguments to the terminal. 
-In the context of the command you provided, echo is used to display the result of the sh -c command which is the string "Size: <size>, Name: <filename>". 
+In the context, echo is used to display the result of the sh -c command which is the string "Size: <size>, Name: <filename>". 
 The <size> and <filename> are obtained by the du and cut commands respectively.
 ![Image](report3-8.png)
 
 
 
   
-The command below will search for all files with the .txt extension in the documents directory and its subdirectories, 
+The command below will search for all files with the .txt extension in the directory within written2 and its subdirectories, 
 and then it will execute the grep command on each file that matches the pattern. 
 The grep command will search for the keyword "whisper" in the file and print out any lines that contain the keyword, 
 along with the name of the file that the lines came from.
