@@ -59,8 +59,7 @@ and stands for "human-readable".echo is a command in the shell that simply outpu
 In the context of the command you provided, echo is used to display the result of the sh -c command which is the string "Size: <size>, Name: <filename>". 
 The <size> and <filename> are obtained by the du and cut commands respectively.
 ![Image](report3-8.png)
-The command that is supplied to exec must be surrounded in quotes and must end with a semicolon (;).
-By doing so, I am informing locate that the command has completed, and it should continue on to the next file.
+
 
 
 
