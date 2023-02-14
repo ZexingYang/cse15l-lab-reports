@@ -62,12 +62,12 @@ The <size> and <filename> are obtained by the du and cut commands respectively.
 
 
 
-
   
-  
-
-![Image](report3-9.png)
-This command will search for all files with the .txt extension in the documents directory and its subdirectories, 
+The command below will search for all files with the .txt extension in the documents directory and its subdirectories, 
 and then it will execute the grep command on each file that matches the pattern. 
 The grep command will search for the keyword "whisper" in the file and print out any lines that contain the keyword, 
 along with the name of the file that the lines came from.
+
+![Image](report3-9.png)
+
+  Thanks you!
