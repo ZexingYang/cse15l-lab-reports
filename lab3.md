@@ -58,8 +58,8 @@ The -h option of du instructs du to output file sizes in a more legible format, 
 and stands for "human-readable".echo is a command in the shell that simply outputs its arguments to the terminal. 
 In the context, echo is used to display the result of the sh -c command which is the string "Size: <size>, Name: <filename>". 
 The <size> and <filename> are obtained by the du and cut commands respectively.
-![Image](report3-8.png)
 
+![Image](report3-10.png)
 
 
   
