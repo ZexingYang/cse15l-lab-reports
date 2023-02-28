@@ -2,11 +2,15 @@
 
 
 
+
+
 ## Log into ieng6
 #Wed 11:00 AM B260, Group 2, Serpentmarsh
 ![Image](report4-1.png)
 I type in ssh command with my account and hit <enter> to login as I have set "password free" in lab
 
+ 
+ 
 
 ## Clone your fork of the repository from your Github account
 #Wed 11:00 AM B260, Group 2, Serpentmarsh
@@ -15,6 +19,8 @@ I type in ssh command with my account and hit <enter> to login as I have set "pa
 
 
 
+ 
+ 
 ## Run the tests, demonstrating that they fail
 #Wed 11:00 AM B260, Group 2, Serpentmarsh
 ![Image](report4-3.png)
@@ -24,6 +30,8 @@ I use Command-C to copy and Command-V to paste java -cp .:lib/hamcrest-core-1.3.
 Then I hit <enter>
 
 
+ 
+ 
 ## Edit the code file to fix the failing test 
 #Wed 11:00 AM B260, Group 2, Serpentmarsh
 ![Image](report4-4.png)
@@ -40,7 +48,9 @@ I use Command-C to copy and Command-V to paste javac -cp .:lib/hamcrest-core-1.3
 Then I hit <enter>
 I use Command-C to copy and Command-V to paste java -cp .:lib/hamcrest-core-1.3.jar:lib/junit-4.13.2.jar org.junit.runner.JUnitCore ListExamplesTests
 Then I hit <enter>
-  
+
+ 
+ 
 ## Commit and push the resulting change to your Github account (you can pick any commit message!)
 #Wed 11:00 AM B260, Group 2, Serpentmarsh
 ![Image](report4-7.png)
@@ -49,3 +59,5 @@ Then I hit <enter>
  `git commit -m "Fix a  bug in merge() method"`: I add one sentence to comment where is the bug
  `git add --all`: add
  `git push`: Pushes your changes to the default remote branch (usually origin/main)
+ 
+ Thanks for watching!
