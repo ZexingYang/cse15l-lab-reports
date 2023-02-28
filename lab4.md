@@ -37,7 +37,7 @@ Then I hit `<enter>`
 ![Image](report4-4.png)
  I used `<tab>` to auto complete the file name
 ![Image](report4-5.png)
- I use cursor to move to index2 and use delte and typing to modify the code. Then I press Ctrl+O to save the changes. I Press Enter to confirm the same file name and press Ctrl+X to exit nano.
+ I use cursor to move to index2 and use delte and typing to modify the code. Then I press Ctrl+O to save the changes. I Press `<enter>` to confirm the same file name and press Ctrl+X to exit nano.
 
 
 
