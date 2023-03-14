@@ -17,7 +17,7 @@ I choose this one to have two matches
 ![Image](report5-6.png)
 
 
-Find all files in the current directory and its subdirectories that have the word "travel" in their name:
+find . -type d -name '*travel*'Find all files in the current directory and its subdirectories that have the word "travel" in their name:
 
 ![Image](report5-1.png)
 
