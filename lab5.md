@@ -52,7 +52,7 @@ Since last time I focus on find, this lab I will explore grep. Similar to skill-
 
 
 `grep -v "History" IntroGreek.txt` would search for lines in IntroGreek.txt that do not contain the word "History" 
-as v represents "Invert" I guess from 
+as v represents "Invert" I guess.
 ![Image](report5-5.png)
 
 
