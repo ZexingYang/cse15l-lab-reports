@@ -5,6 +5,13 @@
 
 
 I used site https://linuxcommand.org/lc3_man_pages/grep1.html and ChatGpt
+`find . -type d -name '*ber*'`will find all files in the current directory and its subdirectories.
+I choose this one to have two matches
+
+
+
+![Image](report5-6.png)
+
 
 Find all files in the current directory and its subdirectories that have the word "travel" in their name:
 
